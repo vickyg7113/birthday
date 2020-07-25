@@ -1,0 +1,67 @@
+<html><head> 
+  <style>
+    body{
+  background:url('vamshi/bd4.jpg');
+  border:3px solid black;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+.image{
+  float:left;
+  display:block;
+  margin-top:20px;
+  border-radius:50px;
+  margin-left:30px;
+  height:900px;
+  width:50%;
+}
+.gif{
+  height:400px;
+  width:700px;
+  margin-top:40px;
+  margin-left:10px;
+  border-radius:50%;
+}
+audio{
+  width:50%;
+  margin-left:30px;
+  margin-top:50px;
+  font:300%;
+}
+#timer{
+ color:yellow;
+ font-size:90px;
+ border:3px solid orange;
+ width:50%;
+ border-radius:20px;
+ margin:30px;
+}
+  </style>
+ </head> 
+ <body> 
+  <div> 
+   <img class="image" src="vamshi/srinath.jpg"> 
+  </div> 
+  <div> 
+   <img class="gif" src="vamshi/birth.gif"> 
+  </div> 
+  <div id="timer"> 
+  </div> 
+  <div> 
+   <audio controls autoplay loop> 
+    <source src="vamshi/srinath.mp3"> 
+   </audio> 
+  </div> 
+  <script>
+    var timer =document.getElementById("timer");
+  var date=new Date();
+   setInterval(set,1000);
+   function set(){
+   timer.innerHTML =date.toDateString();
+  }
+    
+  </script>
+ 
+</body></html>
